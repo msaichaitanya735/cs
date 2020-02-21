@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0.849);
 }
 .bos{
     display: flex;
@@ -129,22 +130,21 @@ nav a{
     position: relative;
     text-align: center;
         padding: 10px;
-        margin: 30px auto;
+        margin: auto;
         width: 700px;
         height: auto;
         border-radius: 40px;
-      box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+        box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
         cursor: pointer;
-        transition: 0.4s;
+        transition: 0.7s;
+        background-color: #fff;
       }
       .raise:hover,
       .raise:focus {
         box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
         transform: translateY(-0.25em);
       }
-.tile h1{
-  color: #ff33bb;
-}
+
 .container h1{
   color: white;
   width: auto;
@@ -158,7 +158,7 @@ nav a{
   width: 300px;
   height: 300px;  
   border-radius: 40px;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
   cursor: pointer;
   transition: 0.4s;
 float: left;
@@ -174,6 +174,13 @@ float: left;
   border-radius: 40px;
   object-fit: cover;
 }
+.card .card_image a {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
 .card .card_title {
     color: white;
   text-align: center;
@@ -197,22 +204,20 @@ float: left;
   width: 50%;
   background-color: #646464;
   border-radius: 10%;
+  transition: 0.7s;
 }
+
 .row{
   background-color: rgb(65, 63, 63);
   background-image: linear-gradient(to center,#535353, #272629 );
-
   display: flex;
   justify-content: space-between;  
 }
 .svg-wrapper {
   position: relative;
-  padding-top: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  padding : 25px;
 	margin: 0 auto;
   width: 520px;  
-  text-align: center;
 }
 .shape {
   stroke-dasharray: 0 580;
@@ -234,7 +239,7 @@ float: left;
   top: -48px;
   position: relative;
   text-align: center;
-  height: 60px;
+  height: 10px;
   width: 520px;
   font-variant: small-caps;
 }
@@ -243,6 +248,120 @@ float: left;
   stroke-dashoffset: 0;
   stroke-dasharray: 480 100;
 }
+.wrap {
+  position: relative; 
+  padding-top: 10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {  
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
 
 
 
+/* .svg-wrapper {
+  position: relative;
+  padding-top: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+	margin: 0 auto;
+  width: 520px;  
+  text-align: center;
+} */
+
+/* .popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .80);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hiden;
+  transition: .64s ease-in-out;
+}
+  .popup-inner {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 80%;
+    background-color: #fff;
+    transform: rotate(32deg);
+    transition: .64s ease-in-out;
+  }
+  .popup__photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+  }
+    .popup__photo img {
+      width: auto;
+      height: 100%;
+    }
+
+  .popup__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    padding: 4rem;
+  }
+  .popup__text h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      color: #0A0A0A;
+    }
+    .popup__text p {
+      font-size: .875rem;
+      color: #686868;
+      line-height: 1.5;
+    }
+
+  .popup:target {
+    visibility: visible;
+    opacity: 1;
+  }
+    .popup-inner {
+      bottom: 0;
+      right: 0;
+      transform: rotate(0);
+    }
+
+  .popup__close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: .875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0A0A0A;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  } */
